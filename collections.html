@@ -19,7 +19,7 @@
         <nav>
           <a href="index.html">Home</a>
           <a href="collections.html" class="active">Collections</a>
-          <a href="story.html">Our Story</a>
+          <a href="cart.html">Your Cart</a>
           <a href="contact.html">Contact Us</a>
         </nav>
       </div>
@@ -34,6 +34,8 @@
         </div>
       </section>
 
+      <p id="cart-status" class="cart-status container" role="status" aria-live="polite"></p>
+
       <section class="section jewelry-section" aria-labelledby="necklaces-heading">
         <div class="container">
           <div class="section-header">
@@ -45,7 +47,8 @@
             <article class="product-card">
               <h3>The Everyday Necklace</h3>
               <p>A delicate finishing touch</p>
-              <p class="price">Add your price</p>
+              <p class="price">$9</p>
+              <button class="add-to-cart" type="button" data-product-id="everyday-necklace" data-product-name="The Everyday Necklace" data-product-price="9">+ ADD TO CART</button>
             </article>
           </div>
         </div>
@@ -62,13 +65,15 @@
             <article class="product-card">
               <h3>The Golden Bracelet</h3>
               <p>Understated sophistication</p>
-              <p class="price">Add your price</p>
+              <p class="price">$5</p>
+              <button class="add-to-cart" type="button" data-product-id="golden-bracelet" data-product-name="The Golden Bracelet" data-product-price="5">+ ADD TO CART</button>
             </article>
 
             <article class="product-card">
               <h3>Silken Chain</h3>
               <p>Soft shine, lasting grace</p>
-              <p class="price">Add your price</p>
+              <p class="price">$5</p>
+              <button class="add-to-cart" type="button" data-product-id="silken-chain" data-product-name="Silken Chain" data-product-price="5">+ ADD TO CART</button>
             </article>
           </div>
         </div>
@@ -85,13 +90,22 @@
             <article class="product-card">
               <h3>Horizon Earrings</h3>
               <p>Light-catching elegance</p>
-              <p class="price">Add your price</p>
+              <p class="price">$7</p>
+              <button class="add-to-cart" type="button" data-product-id="horizon-earrings" data-product-name="Horizon Earrings" data-product-price="7">+ ADD TO CART</button>
             </article>
           </div>
         </div>
       </section>
 
-      <section class="section" style="background: #f2ece4;">
+      <section class="section custom-pieces-section" aria-labelledby="custom-pieces-heading">
+        <div class="container custom-pieces-copy">
+          <h2 id="custom-pieces-heading">Custom Pieces!</h2>
+          <p class="custom-pieces-intro">You can tell us what type of jewelry you want!</p>
+          <p class="custom-pieces-note">You can only pick the themes for your custom jewelry</p>
+        </div>
+      </section>
+
+      <section class="section pastel-section">
         <div class="container feature-grid">
           <article class="feature-card">
             <h3>Made to be worn often</h3>

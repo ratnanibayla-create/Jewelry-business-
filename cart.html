@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Your Cart | Juju's Jewls</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;500&family=DM+Sans:wght@300;400;500&display=swap" rel="stylesheet" />
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <div class="announcement">A little luxury, just for you</div>
+
+    <header>
+      <div class="container header-inner">
+        <span class="logo">Juju's Jewls</span>
+
+        <nav>
+          <a href="index.html">Home</a>
+          <a href="collections.html">Collections</a>
+          <a href="cart.html" class="active">Your Cart</a>
+          <a href="contact.html">Contact Us</a>
+        </nav>
+      </div>
+    </header>
+
+    <main>
+      <section class="page-hero">
+        <div class="container">
+          <div class="eyebrow">A little something special</div>
+          <h1>Your Cart</h1>
+          <p id="cart-status" role="status" aria-live="polite"></p>
+        </div>
+      </section>
+
+      <section class="section cart-section">
+        <div class="container">
+          <p id="cart-empty">Your cart is empty for now. Find a piece you love in our collections.</p>
+          <div id="cart-items" class="cart-items"></div>
+          <p id="cart-total" class="cart-total"></p>
+          <a href="collections.html" class="button">Explore collections</a>
+        </div>
+      </section>
+    </main>
+
+    <footer>
+      <div class="container">
+        <div class="copyright">© <span id="year"></span> Juju's Jewls. All rights reserved.</div>
+      </div>
+    </footer>
+
+    <script src="script.js"></script>
+  </body>
+</html>
