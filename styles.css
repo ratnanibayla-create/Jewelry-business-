@@ -121,6 +121,15 @@ nav a.active {
   max-width: 470px;
 }
 
+.hero-actions {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 14px;
+  margin-top: 28px;
+  flex-wrap: wrap;
+}
+
 .eyebrow {
   color: var(--accent);
   letter-spacing: 3px;
@@ -339,6 +348,23 @@ button:hover {
 .story-copy p + p,
 .contact-copy p + p {
   margin-top: 18px;
+}
+
+.detail-list {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+  margin: 22px 0 28px;
+}
+
+.detail-list span {
+  background: rgba(180, 154, 114, 0.1);
+  border: 1px solid rgba(145, 118, 79, 0.2);
+  color: var(--accent-deep);
+  padding: 10px 14px;
+  font-size: 10px;
+  letter-spacing: 1.4px;
+  text-transform: uppercase;
 }
 
 .values-grid {
