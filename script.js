@@ -89,7 +89,7 @@ document.addEventListener('DOMContentLoaded', () => {
           const quantity = document.createElement('p');
           quantity.textContent = `Quantity: ${item.quantity}`;
           const price = document.createElement('p');
-          price.textContent = `$${item.price.toFixed(2)} each`;
+          price.textContent = `Item total: $${(item.price * item.quantity).toFixed(2)}`;
           details.append(name, quantity, price);
 
           const removeButton = document.createElement('button');
