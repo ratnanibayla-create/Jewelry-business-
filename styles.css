@@ -132,6 +132,7 @@ nav a.active {
   grid-template-columns: 1fr;
   justify-items: center;
   text-align: center;
+  min-height: max(320px, calc(100svh - 193px));
 }
 
 .hero-text {
@@ -429,6 +430,13 @@ button:hover {
   margin-bottom: 24px;
   color: var(--muted);
   font-size: 18px;
+  text-align: center;
+}
+
+.cart-section > .container > .button {
+  display: block;
+  width: fit-content;
+  margin-inline: auto;
 }
 
 .cart-items {
@@ -737,6 +745,11 @@ footer .logo {
 @media (max-width: 680px) {
   .cart-status {
     top: 170px;
+  }
+
+  .hero-no-image {
+    min-height: max(290px, calc(100svh - 340px));
+    padding: 35px 0;
   }
 
   .header-inner {
